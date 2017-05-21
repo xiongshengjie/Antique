@@ -46,7 +46,16 @@ public class AntiqueDao {
 	}
 	
 	public void add(Antique antique) {
+		SAXReader reader = new SAXReader();
 		
+		Document document;
+		
+		try {
+			document = reader.read(new File("src/antique.xml"));
+			
+		} catch (DocumentException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }
