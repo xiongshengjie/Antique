@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>Antique</display-name>
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>com.antique.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>AddAntiqueServlet</servlet-name>
+    <servlet-class>com.antique.servlet.AddAntiqueServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddAntiqueServlet</servlet-name>
+    <url-pattern>/addAntique</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListAntiqueServlet</servlet-name>
+    <servlet-class>com.antique.servlet.ListAntiqueServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListAntiqueServlet</servlet-name>
+    <url-pattern>/listAntique</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DelAntiqueServlet</servlet-name>
+    <servlet-class>com.antique.servlet.DelAntiqueServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelAntiqueServlet</servlet-name>
+    <url-pattern>/delAntique</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FindAntiqueByIdServlet</servlet-name>
+    <servlet-class>com.antique.servlet.FindAntiqueByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindAntiqueByIdServlet</servlet-name>
+    <url-pattern>/findAntiqueById</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EditAntiqueServlet</servlet-name>
+    <servlet-class>com.antique.servlet.EditAntiqueServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditAntiqueServlet</servlet-name>
+    <url-pattern>/editAntique</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FindAntiqueByManyConditionServlet</servlet-name>
+    <servlet-class>com.antique.servlet.FindAntiqueByManyConditionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindAntiqueByManyConditionServlet</servlet-name>
+    <url-pattern>/findAntique</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>

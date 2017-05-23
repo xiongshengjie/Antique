@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<museum>
-	<antique id="1" name="熊" category="青铜">
-		<size>宽100   长200</size>
-		<createtime>清</createtime>
-		<findtime>2016-8-5 7:45:00</findtime>
-		<findplace>家里</findplace>
-		<description>就是一个熊嘛</description>
-		<imgurl>/asdf/gasd/jj.jpg</imgurl>
-	</antique>
-	
-	<antique id="2" name="sheng" category="字画">
-		<size>100*200</size>
-		<createtime>公元前2000</createtime>
-		<findtime>2005-4-6 18:54:32</findtime>
-		<findplace>兵马俑</findplace>
-		<description>一幅价值连城的字画</description>
-		<imgurl>/asdf/gasd/jj.jpg</imgurl>
-	</antique>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<museum> 
+  <antique id="1" name="熊" category="青铜"> 
+    <size>宽100 长200</size>  
+    <createtime>清</createtime>  
+    <findtime>2016-8-5 07:45:00</findtime>  
+    <findplace>家里</findplace>  
+    <description>就是一个熊嘛</description>  
+    <imgurl>/asdf/gasd/jj.jpg</imgurl> 
+  </antique>  
+  <antique id="2" name="sheng" category="字画"> 
+    <size>100*200</size>  
+    <createtime>公元前2000</createtime>  
+    <findtime>2005-4-6 18:54:32</findtime>  
+    <findplace>兵马俑</findplace>  
+    <description>一幅价值连城的字画</description>  
+    <imgurl>/asdf/gasd/jj.jpg</imgurl> 
+  </antique>  
 </museum>
