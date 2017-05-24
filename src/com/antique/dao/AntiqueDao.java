@@ -265,17 +265,4 @@ public class AntiqueDao {
 		return list;
 		
 	}
-	
-	public static void main(String[] args) {
-		AntiqueDao dao = new AntiqueDao();
-		
-		Antique antique = new Antique("3","jie","名人","1994-12-17 06:00:00","高178cm  重60kg","1995-12-17 06:00:00","呵呵","就是一个杰嘛","/img/1/jj.jpg");
-		Antique ch = new Antique("3","杰","名人","1994-12-17 06:00:00","高178cm  重60kg","1995-12-17 06:00:00","呵呵","就是一个杰嘛","/img/1/jie.jpg");
-		try {
-			dao.listAll();
-		} catch (DocumentException e) {
-			e.printStackTrace();
-		}
-	}
-	
 }

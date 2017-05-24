@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!ELEMENT museum (antique+)>
+<!ELEMENT antique (size,createtime,findtime,findplace,description,imgurl)>
+
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT createtime (#PCDATA)>
+<!ELEMENT findtime (#PCDATA)>
+<!ELEMENT findplace (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT imgurl (#PCDATA)>
+
+<!ATTLIST antique id CDATA #REQUIRED>
+<!ATTLIST antique name CDATA #REQUIRED>
+<!ATTLIST antique category CDATA #REQUIRED>
