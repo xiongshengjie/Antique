@@ -1,3 +1,2 @@
 # Antique
-基于xml的博物馆里系统，保存数据使用xml，不适用数据库<br/>
-网址：http://www.xcloude.cn/bookstore
+基于xml的博物馆里系统，保存数据使用xml，不使用数据库
